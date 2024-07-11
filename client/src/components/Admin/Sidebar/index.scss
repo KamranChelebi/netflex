@@ -1,0 +1,16 @@
+.css-1nxmd3h-MuiListItem-root {
+    transition: .3s;
+
+    .css-10hburv-MuiTypography-root {
+        font-size: 20px;
+        transition: .3s;
+    }
+
+    &:hover {
+        background-color: white;
+    }
+
+    &:hover .css-10hburv-MuiTypography-root {
+        color: #DC1A28;
+    }
+}

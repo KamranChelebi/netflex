@@ -1,0 +1,51 @@
+.info-list {
+    display: flex;
+    align-items: center;
+
+    ul {
+        li {
+            display: flex;
+            align-items: center;
+            width: 350px;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #313035;
+
+            .icon {
+                width: 66px;
+                height: 66px;
+                font-size: 20px;
+                background: #DC1A28;
+                color: #fafafa;
+                text-align: center;
+                line-height: 66px;
+                flex: 0 0 66px;
+                border-radius: 50%;
+                margin-right: 15px;
+            }
+
+            p {
+                font-size: 17px;
+                font-weight: 500;
+                line-height: 26px;
+                color: #bcbcbc;
+                margin: 0;
+                padding: 0;
+                border: 0;
+                display: flex;
+                flex-wrap: wrap;
+
+                span {
+                    color: #e5e5e5;
+                    margin-right: 5px;
+                    font-weight: 600;
+                }
+            }
+
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

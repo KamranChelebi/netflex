@@ -1,0 +1,106 @@
+#subscribers {
+    background-color: #DC1A28;
+
+    .padding {
+        padding: 55px 80px;
+
+        h4 {
+            font-size: 30px;
+            text-transform: uppercase;
+            color: white;
+            margin-bottom: 0;
+            font-weight: 700;
+
+        }
+
+        p {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 26px;
+            margin-bottom: 0;
+            color: #171d22;
+        }
+
+        @media (max-width: 991.98px) {
+            h4 {
+                text-align: center;
+            }
+
+            p {
+                text-align: center;
+                margin-bottom: 25px;
+            }
+        }
+
+        form {
+            position: relative;
+
+            input {
+                width: 100%;
+                border: 2px solid #faf9f7;
+                background: #fff;
+                box-shadow: 0px 3px 4px 0px rgba(30, 30, 30, 0.17);
+                padding: 17px 25px;
+                padding-right: 215px;
+                border-radius: 4px;
+                outline: none;
+            }
+
+            .btn {
+                position: absolute;
+                right: 2px;
+                top: 2px;
+                bottom: 2px;
+                border-radius: 4px;
+                background: #171d22;
+                border: 2px solid #171d22;
+                font-weight: 700;
+                letter-spacing: 1px;
+                line-height: 1.5;
+                margin-bottom: 0;
+                display: inline-block;
+                text-transform: uppercase;
+                color: #DC1A28;
+                font-size: 14px;
+                padding: 15px 34px;
+                touch-action: manipulation;
+                transition: all 0.3s ease 0s;
+                vertical-align: middle;
+                white-space: nowrap;
+                max-width: 200px;
+                text-align: center;
+
+                &:hover {
+                    background-color: #DC1A28;
+                    color: #171d22;
+                }
+            }
+
+            @media (max-width: 767.98px) {
+                input {
+                    padding: 17px 30px;
+                    padding-right: 30px;
+                }
+
+                .btn {
+                    position: initial;
+                    margin-top: 15px;
+                }
+
+            }
+        }
+
+        @media (max-width: 767.98px) {
+            form {
+                text-align: center;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .padding {
+            padding: 55px 0px;
+        }
+    }
+
+}

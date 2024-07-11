@@ -1,0 +1,133 @@
+#movie-ofDay {
+    background-image: url("https://themebeyond.com/html/movflx/img/bg/live_bg.jpg");
+    background-position: left center;
+    background-size: cover;
+    padding: 120px 0;
+
+    .section-title {
+        span {
+            line-height: 1;
+            display: block;
+            font-size: 12px;
+            text-transform: uppercase;
+            font-weight: 500;
+            position: relative;
+            margin-bottom: 12px;
+            letter-spacing: 1px;
+            padding-left: 53px;
+            color: #656363;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 5px;
+                width: 40px;
+                height: 3px;
+                background-color: #DC1A28;
+            }
+        }
+
+    }
+
+    h2 {
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 25px;
+    }
+
+    .content {
+        p {
+            color: #6a6a6a;
+            margin-bottom: 0;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 26px;
+        }
+
+        .quality {
+            font-size: 60px;
+            text-shadow: 0px 3px 24px rgba(160, 160, 160, 0.09);
+            line-height: 1;
+            margin-bottom: 0;
+            color: #d81c2b;
+            font-weight: 700;
+            -webkit-text-fill-color: white;
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: #d81c2b;
+            margin-right: 35px;
+            margin-bottom: 15px;
+        }
+
+        .IMDB {
+            font-size: 38px;
+            color: #1e1b29;
+            text-shadow: 0px 3px 4px rgba(30, 30, 30, 0.18);
+            line-height: .8;
+            font-weight: 700;
+            margin-bottom: 15px;
+
+            .fa-star {
+                color: #F6CA2A;
+                display: inline-block;
+            }
+        }
+
+        .trailerBTN {
+            box-shadow: 0px 3px 24px 0px rgba(160, 160, 160, 0.5);
+            background: #DC1A28;
+            color: #1e1b29;
+            cursor: pointer;
+            display: inline-block;
+            font-size: 14px;
+            letter-spacing: 1px;
+            padding: 16px 34px;
+            font-weight: 700;
+            line-height: 21px;
+            margin-bottom: 0;
+            text-align: center;
+            text-transform: uppercase;
+            touch-action: manipulation;
+            transition: all 0.3s ease 0s;
+            vertical-align: middle;
+            white-space: nowrap;
+            max-width: 200px;
+            border: 2px solid #DC1A28;
+            border-radius: 50px;
+            color: white;
+
+            &:hover {
+                background-color: transparent;
+                color: #1e1b29;
+                box-shadow: none;
+            }
+        }
+    }
+
+    .img {
+        margin-left: 70px;
+    }
+
+    @media (max-width: 1200px) {
+        .img {
+            margin-left: 0;
+        }
+    }
+
+    @media (max-width: 992px) {
+        .img {
+            margin-left: 0;
+            margin-top: 50px;
+        }
+    }
+
+    @media (max-width: 1500px) {
+        .img {
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+
+
+}

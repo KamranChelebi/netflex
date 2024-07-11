@@ -1,0 +1,136 @@
+#admin-profile {
+    background-image: url("https://themebeyond.com/html/movflx/img/bg/movie_bg.jpg");
+    background-position: top center;
+    background-size: cover;
+    padding: 80px 0 10px;
+
+    .img {
+
+        border-radius: 50%;
+        text-align: center;
+        width: 250px;
+        height: 250px;
+        margin: 0 auto;
+        position: relative;
+
+        .img-delete {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: transparent;
+            border: 0;
+            outline: 0;
+            font-size: 25px;
+            color: #DC1A28;
+        }
+    }
+
+    .img-input {
+        background-color: #20212b;
+        color: white;
+        padding: 10px;
+        border: 1px solid #DC1A28;
+        margin-top: 10px;
+    }
+
+    .form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 50px 50px 50px;
+        width: 600px;
+        margin-left: 90px;
+
+        .css-1jy569b-MuiFormLabel-root-MuiInputLabel-root.Mui-disabled {
+            color: white !important;
+            background-color: transparent;
+        }
+
+        .css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root.Mui-disabled .MuiOutlinedInput-notchedOutline {
+            border-color: #DC1A28 !important;
+        }
+
+        .Mui-disabled {
+            background-color: #707070;
+            color: white !important;
+        }
+
+        p {
+            background-color: #20212b;
+            border-radius: 5px;
+            color: white;
+            border: 1px solid #DC1A28;
+            padding: 16.5px 14px;
+            margin-top: 30px;
+            width: 100%;
+            font-style: italic;
+            margin-bottom: 0;
+        }
+
+        form {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+
+            .MuiOutlinedInput-notchedOutline {
+                border: 2px solid #DC1A28;
+            }
+
+            .MuiInputLabel-root {
+                color: white;
+            }
+
+            .MuiInputBase-root {
+                color: white;
+                background-color: #20212b;
+            }
+
+
+        }
+    }
+
+    @media (max-width: 991px) {
+        .form {
+            margin-left: 0px;
+            width: 100%;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+
+    .message {
+        background-color: #20212b;
+        border: 2px solid #DC1A28;
+        text-transform: capitalize;
+        padding: 10px 50px;
+        margin-top: 20px;
+    }
+
+    .btn {
+        color: #fff;
+        background: #12151e;
+        border: 2px solid #DC1A28;
+        border-radius: 50px;
+        display: inline-block;
+        font-size: 14px;
+        letter-spacing: 1px;
+        padding: 16px 34px;
+        font-weight: 700;
+        line-height: 21px;
+        margin-bottom: 0;
+        text-align: center;
+        text-transform: uppercase;
+        touch-action: manipulation;
+        transition: all 0.3s linear;
+        vertical-align: middle;
+        white-space: nowrap;
+        max-width: 230px;
+
+        &:hover {
+            background-color: #DC1A28;
+        }
+    }
+}

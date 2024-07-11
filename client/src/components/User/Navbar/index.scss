@@ -1,0 +1,82 @@
+header {
+    .nav-link {
+        font-size: 14px;
+        line-height: 14px;
+        font-weight: 700;
+        color: white;
+        transition: .3s;
+
+        &:hover {
+            color: #DC1A28;
+        }
+    }
+
+    .active {
+        button {
+            color: #DC1A28 !important;
+            font-size: 14px !important;
+        }
+    }
+
+    .signUpBTN {
+        color: #fff;
+        background: #12151e;
+        border: 2px solid #DC1A28;
+        border-radius: 50px;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 14px;
+        letter-spacing: 1px;
+        padding: 10px 34px;
+        font-weight: 700;
+        line-height: 21px;
+        margin-bottom: 0;
+        text-align: center;
+        text-transform: uppercase;
+        touch-action: manipulation;
+        transition: all 0.3s ease 0s;
+        vertical-align: middle;
+        white-space: nowrap;
+        max-width: 200px;
+
+        &:hover {
+            background-color: #DC1A28;
+        }
+    }
+
+}
+
+@media (max-width: 430px) {
+    .modal-box {
+        width: 260px !important;
+        .btns{
+            flex-wrap: wrap !important;
+            gap: 10px;
+        }
+    }
+}
+.logoutBTNS {
+    color: #fff;
+    background: #12151e;
+    border: 2px solid #DC1A28;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 10px 34px;
+    font-weight: 700;
+    line-height: 21px;
+    margin-bottom: 0;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transition: all 0.3s ease 0s;
+    vertical-align: middle;
+    white-space: nowrap;
+    max-width: 200px;
+
+    &:hover {
+        background-color: #DC1A28;
+    }
+}

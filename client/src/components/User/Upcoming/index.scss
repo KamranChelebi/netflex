@@ -1,0 +1,202 @@
+#upcoming {
+    background-image: url("https://themebeyond.com/html/movflx/img/bg/ucm_bg.jpg");
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    padding: 120px 0 70px;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: #100e17;
+        opacity: .95;
+    }
+
+    .bgfilter {
+        background-image: url("https://themebeyond.com/html/movflx/img/bg/ucm_bg_shape.png");
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .section-title {
+        color: white;
+        text-align: center;
+        position: relative;
+        z-index: 99;
+
+        span {
+            display: block;
+            line-height: 1;
+            font-size: 12px;
+            text-transform: uppercase;
+            font-weight: 500;
+            position: relative;
+            margin-bottom: 12px;
+            letter-spacing: 1px;
+            color: #DC1A28;
+        }
+
+        h2 {
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 43.2px;
+        }
+    }
+
+    .category {
+        text-align: center;
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        .MuiSelect-select{
+            background-color: #20212b;
+            border-radius: 50px;
+        }
+        .MuiOutlinedInput-notchedOutline{
+            border: 2px solid #DC1A28;
+            border-radius: 50px;
+        }
+        .MuiInputLabel-root{
+            color: white;
+        }
+        .MuiSvgIcon-root{
+            color: white;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .section-title {
+            text-align: left;
+        }
+
+        .category {
+            justify-content: end;
+        }
+    }
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .movie-card {
+        // height: 546px;
+        .moviePoster {
+            position: relative;
+            height: 430px;
+            margin-bottom: 23px;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background: #04050a;
+                transition: .3s linear;
+                opacity: 0;
+            }
+        }
+
+        &:hover .moviePoster::before {
+            opacity: 0.82;
+        }
+
+        .cardBTN {
+            color: #fff;
+            background: #12151e;
+            border: 2px solid #DC1A28;
+            border-radius: 50px;
+            cursor: pointer;
+            display: inline-block;
+            font-size: 14px;
+            letter-spacing: 1px;
+            padding: 16px 34px;
+            font-weight: 700;
+            line-height: 21px;
+            margin-bottom: 0;
+            text-align: center;
+            text-transform: uppercase;
+            touch-action: manipulation;
+            transition: all 0.3s linear;
+            vertical-align: middle;
+            white-space: nowrap;
+            max-width: 230px;
+            z-index: 9;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            visibility: hidden;
+            opacity: 0;
+
+            &:hover {
+                background-color: #DC1A28;
+            }
+        }
+
+        &:hover .cardBTN {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+
+    .movie-title {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        line-height: 19.2px;
+        font-weight: 600;
+        transition: .3s;
+        text-align: left;
+
+        &:hover {
+            color: #DC1A28;
+        }
+    }
+
+    .card-icon {
+        margin-right: 5px;
+        color: #DC1A28;
+    }
+
+    .quality {
+        border: 2px solid #fff;
+        padding: 5px 10px;
+        line-height: 1;
+        font-weight: 700 !important;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #DC1A28;
+    }
+}

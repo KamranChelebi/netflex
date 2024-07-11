@@ -1,0 +1,136 @@
+#admin-login {
+    background-image: url("https://wallpaper.dog/large/10800884.jpg");
+    background-position: bottom center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 203px 0;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 146px;
+        background: linear-gradient(to bottom, #000000, transparent);
+        opacity: .66;
+    }
+
+    .form {
+        display: flex;
+        justify-content: flex-start;
+
+        form {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 50px;
+            border: 1px solid white;
+            border-radius: 20px;
+            background-color: rgba(255, 255, 255, 0.507);
+
+            h1 {
+                color: #12151e;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+                font-weight: 600;
+            }
+
+            .input {
+                margin-bottom: 30px;
+                width: 350px;
+
+                .MuiOutlinedInput-notchedOutline {
+                    border: 2px solid #20212b;
+                }
+
+                .MuiInputLabel-root {
+                    color: #20212b;
+                }
+
+                .MuiInputBase-root {
+                    color: #20212b;
+                    background-color: rgba(255, 255, 255, 0.377);
+                }
+
+            }
+
+            @media (max-width: 576px) {
+                .input {
+                    width: 300px;
+                }
+            }
+
+            @media (max-width: 430px) {
+                .input {
+                    width: 260px;
+                }
+            }
+
+            @media (max-width: 380px) {
+                .input {
+                    width: 200px;
+                }
+            }
+
+            .registerBTN {
+                background: #12151e;
+                border: 2px solid #DC1A28;
+                color: #e3dfdf;
+                border-radius: 50px;
+                padding: 16px 34px;
+                font-size: 15px;
+                font-weight: 700;
+                line-height: 1.5;
+                margin-bottom: 0;
+                letter-spacing: 1px;
+                display: inline-block;
+                text-transform: uppercase;
+                touch-action: manipulation;
+                text-align: center;
+                vertical-align: middle;
+                white-space: nowrap;
+                max-width: 200px;
+                transition: all 0.3s ease 0s;
+
+                &:hover {
+                    background-color: #DC1A28;
+                }
+            }
+
+            .message {
+                width: 350px;
+                padding: 15px 20px;
+                font-size: 18px;
+                margin-bottom: 20px;
+                text-align: center;
+                background-color: #DC1A28;
+                color: white;
+                border-radius: 5px;
+                border: 1px solid #12151e;
+
+                p {
+                    margin-bottom: 0;
+                }
+            }
+
+            .goRegister {
+                margin-top: 20px;
+                font-size: 17px;
+
+                a {
+                    text-decoration: underline !important;
+                }
+
+            }
+
+        }
+    }
+
+    @media (max-width: 992px) {
+        .form {
+            justify-content: center;
+        }
+    }
+}
